@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css connection-->
+    <link rel="stylesheet" href="User_details.css" >
+</head>
+<body>
+   
+        <ul class="heading">
+            <li>Name</li>
+            <li>Contact</li>
+            <li>Email</li>
+            <li>Address</li>
+            <li>Membership</li>
+            <li>No of Books</li>
+        </ul>
+
+        <div class="box">
+        <% array.forEach(function(u1){  %>
+            
+        <div class="data_box">
+        
+        <ul class="data">
+           
+            <li><%= (u1.first_name)+ ' ' +(u1.last_name) %></li>
+            <li><%= (u1.phoneno) %></li>
+            <li><%= (u1.email) %></li>
+            <li><%= (u1.address) %></li>
+            <li><%= (u1.Membership) %></li>
+            <li><%= (u1.no_of_books_issued) %></li>
+        </ul>
+
+        <a class="booki" href="/UserBookDetails_book/<%=(u1.email)%>">Books</a>
+
+        <a class="update" href="/editDetails">Update</a>
+
+        <a class="delete" href="/delete_User/<%=(u1.email)%>" onclick="return confirmAction();" >Delete</a>
+        </div>
+
+      <%  });  %>
+        </div>
+
+        <script>
+            function confirmAction() {
+              // Display a confirmation dialog
+              if (confirm("Are you sure you want to delete the user ?")) {
+                // If the user confirms, redirect to the destination page
+                window.location.href = this.href;
+                return true;
+              } else {
+                // If the user cancels, do not proceed with the redirection
+                return false;
+              }
+            }
+          </script>
+</body>
+</html>

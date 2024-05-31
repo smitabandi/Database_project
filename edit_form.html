@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Edit Details</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    input,
+    select {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .popup p {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(94, 93, 93, 0.2);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form id="editForm" method="POST" action="/update_User">
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" name="first_name">
+
+            <label for="middleName">Middle name:</label>
+            <input type="text" id="middleName" name="middle_name">
+
+            <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" name="last_name">
+
+            <label for="emailId">Email:</label>
+            <input type="email" id="emailId" name="email" required>
+
+            <!-- <label for="membership">Membership:</label>
+            <select name="membershipOption" id="membershipOption" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select> -->
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="password">
+
+            <label for="booksIssued">Number of books issued:</label>
+            <input type="number" id="booksIssued" name="no_of_books_issued">
+
+
+            <!-- <label for="paymentStatus">Payment Status:</label>
+            <select id="paymentStatus" required>
+                <option value="Paid">Paid</option>
+                <option value="Unpaid">Unpaid</option>
+            </select> -->
+
+            <div class="button-container">
+                <button type="submit" id="editButton">Update</button>
+                <!-- <a method="GET" href="/delete_User?param1=email" id="clearButton">Delete</button> -->
+            </div>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <p>Changes saved</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const saveButton = document.getElementById("saveButton");
+            const clearButton = document.getElementById("clearButton");
+            const popup = document.getElementById("popup");
+            const editForm = document.getElementById("editForm");
+
+            const emailIdInput = document.getElementById("emailId");
+            const nameInput = document.getElementById("name");
+            const contactNumInput = document.getElementById("contact-num");
+            const addressInput = document.getElementById("address");
+            // const issueDateInput = document.getElementById("issueDate");
+            // const returnDateInput = document.getElementById("returnDate");
+            // const paymentStatusInput = document.getElementById("paymentStatus");
+
+            editButton.addEventListener("click", function () {
+
+                if (
+                    emailIdInput.value &&
+                    nameInput.value &&
+                    contactNumInput.value &&
+                    addressInput.value
+                    // issueDateInput.value &&
+                    // returnDateInput.value &&
+                    // paymentStatusInput.value
+                ) {
+
+                    popup.style.display = "flex";
+
+                    setTimeout(function () {
+                        window.location.href = "next-page.html";
+                    }, 3000);
+
+                    editForm.reset();
+                } else {
+                    alert("Please fill in all required fields.");
+                }
+            });
+
+            clearButton.addEventListener("click", function () {
+                editForm.reset();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

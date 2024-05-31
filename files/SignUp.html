@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <!--css connection-->
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+
+    <div class="signup_main">
+        <form method="POST" action="/signUp">
+
+            <div class="s11">
+                <div class="ss1">
+                    <p>Enter First Name :</p>
+                    <input type="text" required name="Fname">
+                </div>
+                <div class="ss1">
+                    <p>Enter Middle Name :</p>
+                    <input type="text" name="Mname">
+                </div>
+
+                <div class="ss1">
+                    <p>Enter Last Name :</p>
+                    <input type="text" name="Lname" required>
+                </div>
+            </div>
+
+            <div class="s12">
+                <p>Enter Contact No : </p>
+                <input type="number" required name="contact">
+                <p>Enter Address : </p>
+                <input type="address" required name="address">
+            </div>
+
+            <div class="s13">
+                <p>Enter Email :</p>
+                <input type="email" required name="email">
+                <p>Enter Password : </p>
+                <input type="password" required name="password">
+            </div>
+
+            <div class="s14">
+                <p>Take Membership :</p>
+                <p>Yes</p>
+                <input type="radio" value="Yes" name="MYes">
+                <p>No</p>
+                <input type="radio" value="No" name="MNo">
+                <p class="note"> [Note:If you take membership then you have to membership fee of Rs.500]</p>
+            </div>
+
+          
+
+            <input class="signup_button" type="submit" value="Sign Up" name="signup">
+
+            <p class="login_already">Already have an account ? <a href="/login">Login </a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>

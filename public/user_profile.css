@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+body{
+    background-image: url("images/UserProfile.jpg");
+    background-size: cover;
+}
+
+.userdetails{
+    position:absolute;
+    top:10%;
+    left:2%;
+    width:30%;
+    height:30%;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    gap:5%;
+
+}
+p{
+    font-size: x-large;
+}
+
+.bookdetails{
+    position:absolute;
+    top:10%;
+    left:35%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:8px;
+    padding-inline-start: 0;
+    border:solid black 2px;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    font-size: large;
+    width:14%;
+    min-height: 14%;
+    list-style-type:none;
+    border:solid black 0.5px;
+}

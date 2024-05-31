@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <link rel="stylesheet" href="user_profile.css">
+</head>
+
+<body>
+    <div class="userdetails">
+        <p>Name : <%= (user.first_name) + ' ' + (user.last_name) %>
+        </p>
+        <p>Email : <%= (user.email) %>
+        </p>
+        <p>Address : <%= (user.address) %>
+        </p>
+        <p>Phone no : <%= (user.phoneno) %>
+        </p>
+        <p>No of books issued : <%= (user.no_of_books_issued) %>
+        </p>
+    </div>
+
+    <div class="bookdetails">
+
+
+        <ul class="data">
+            <li>Book_id</li>
+            <li>Book_Name</li>
+            <li>Author</li>
+            <li>Book_Price</li>
+            <li>Issue_Date</li>
+            <li>Return_Date</li>
+            <li>Payment Status</li>
+        </ul>
+        <% array.forEach(function(u1){ %>
+            <ul class="data">
+                <li>
+                    <%= (u1.bookid) %>
+                </li>
+                <li>
+                    <%= (u1.Book_name) %>
+                </li>
+                <li>
+                    <%= (u1.Author) %>
+                </li>
+                <li>
+                    <%= (u1.Book_price) %>
+                </li>
+                <li>
+                    <%= (u1.issue_status) %>
+                </li>
+                <li>
+                    <%= (u1.return_date) %>
+                </li>
+                <li>
+                    <%= (u1.payment_status) %>
+                </li>
+            </ul>
+
+            <% }); %>
+    </div>
+</body>
+
+</html>

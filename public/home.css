@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("/images/istockphoto-1410976384-612x612.jpg");
+    background-size: cover;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    gap:20%;
+}
+
+.head{
+    color:white;
+    font-weight: normal;
+    font-size:large;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 40px;
+    padding-top:18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: large;
+}
+
+a:hover {
+    color: #ff8c00;
+}
+
+
+/*Login boxes*/
+.main{
+    position: absolute;
+    top:35%;
+    left:15%;
+    /* padding:100px; */
+    height:40%;
+    width:70%;
+    display:flex;
+    justify-content: center;
+    gap:15%;
+
+}
+
+.l{
+    height:80%;
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    gap:20%;
+}
+
+.l1, .l2{
+    height:40%;
+    width:100%;
+    justify-content: center;
+    color:Black;
+    text-align: center;
+    font-size:x-large ;
+    border:solid black 2px;
+    background-color: aqua;
+    padding-top:5%;
+    border-radius: 20px;
+}

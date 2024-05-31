@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    /* background-color: rgb(243, 216, 181); */
+  }
+  .pghead{
+    display: flex;
+    margin-left: 32cm;
+    padding: 0.3cm;
+    /* background-color: aqua; */
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+   .Genere{
+    display: flex;
+    border-color: black;
+    border-radius: 1cm;
+    padding: 1cm;
+    margin: 1 cm;
+    width: 2 cm;
+    flex-wrap:wrap ; 
+   }
+  .box{
+      flex:1 1 30%; 
+    width: 1cm;
+    background-color: antiquewhite;
+    margin: 1cm;
+    padding: 2cm;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+  }
+  /* .Genere li{
+    display: flex;
+    border-color: black;
+    border-radius: 1cm;
+    padding:20%
+    margin: 1 cm;
+    flex-wrap:wrap ;
+    font-style: italic;
+    font-size:5cm;
+    -ms-flex-align:stretch;
+  } */

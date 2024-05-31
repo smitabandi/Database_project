@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Login Page</title>
+
+    <!--css connection-->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login_box">
+        <form method="POST" action="/ownerlogin">
+        <p>Enter Email ID : </p>
+        <input class="i1" type="text" required name="email" maxlength="30" >
+        <p>Enter Password : </p>
+        <input class="i1" type="password" name="password">
+        <br><br>
+        <input class="login_button" type="submit" value="Login" name="logged">
+        </form>
+    </div>
+</body>
+</html>

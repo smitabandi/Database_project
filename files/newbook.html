@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/new book Page</title>
+
+    <!--css connection-->
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+
+    <div class="signup_main">
+        <form method="POST" action="/newBook">
+
+            <div class="s11">
+                <div class="ss1">
+                    <p>Enter Bookid :</p>
+                    <input type="number" required name="bookid">
+                </div>
+                <div class="ss1">
+                    <p>Enter Issue Status(yes/no):</p>
+                    <input type="text" name="issue_status">
+                </div>
+
+                <div class="ss1">
+                    <p>Enter Genere :</p>
+                    <input type="text" name="Genere" required>
+                </div>
+            </div>
+
+            <div class="s12">
+                <p>Enter Book name : </p>
+                <input type="text" required name="Book_name">
+                <p>Enter floor no :</p>
+                <input type="number" required name="Floor_no">
+            </div>
+
+            <div class="s13">
+                <p>Enter Author :</p>
+                <input type="text" required name="Author">
+                <p>Enter Book price  : </p>
+                <input type="number" required name="Book_price">
+            </div>
+            <div class="s14">
+                <p>Enter Shelf no :</p>
+                <input type="number" required name="Shelf_no">
+                <p>Enter row no : </p>
+                <input type="number" required name="Row_no">
+            </div>
+            <!-- <div class="s14"> -->
+                <!-- <p>Enter floor no :</p>
+                <input type="number" required name="Floor_no"> -->
+                <!-- <p>Enter issue date:</p>
+                <input type="date" required name="issue_date"> -->
+            <!-- </div> -->
+
+            <!-- <div class="s14">
+                <p>return :</p>
+                <input type="number" required name="Floor_no">
+                <p>Enter email :</p>
+                <input type="email" required name="email">
+            </div> -->
+
+            <!-- <div class="s14">
+                <p>Take Membership :</p>
+                <p>Yes</p>
+                <input type="radio" value="Yes" name="MYes">
+                <p>No</p>
+                <input type="radio" value="No" name="MNo">
+                <p class="note"> [Note:If you take membership then you have to membership fee of Rs.500]</p>
+            </div>
+
+           -->
+
+            <input class="signup_button" type="submit" value="Create new book " name="signup">
+
+            
+        </form>
+    </div>
+
+</body>
+
+</html>

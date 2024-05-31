@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    background-image:url("images/OwnerProfile.jpeg");
+    background-size: cover;
+}
+
+
+.ol, .el{
+ 
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+.ol{
+    margin-top:6%;
+    width:50%;
+    text-align: center;
+    float:left;
+}
+
+.el{
+    margin-top:8%;
+    width:50%;
+    text-align: center;
+    float:right;
+}
+.info{
+    position:absolute;
+    height: fit-content;
+    width:30%;
+    left:10%;
+    font-size: x-large;
+    top:25%;
+    display:flex;
+    flex-direction: column;
+    gap:5%;
+    padding:5px;
+    border:solid black 1.5px;
+}
+
+.i1{
+    border:black solid 1px;
+    padding:5px;
+    text-align: center;
+}
+
+.buttons{
+    position:absolute;
+    height: 50%;
+    width:30%;
+    top:35%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    gap:10%;
+    text-align:center
+
+}
+
+a{
+    padding:3px;
+    border-radius: 5px;
+    border:solid black 1px;
+   text-decoration: none;
+}

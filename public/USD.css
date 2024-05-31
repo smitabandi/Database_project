@@ -1,0 +1,21 @@
+.heading , .box {
+    width:80%;
+    left:10%;
+}
+body{
+    margin:0;
+}
+
+.heading{
+    top:10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    top:15%;
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+    border:black solid 1px;
+}

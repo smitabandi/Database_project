@@ -1,0 +1,31 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: large;
+    color:black;
+    background-image: url("images/SL2.jpg");
+    background-size: cover;
+}
+
+
+.login_box{
+    position: absolute;
+    top:20%;
+    left:33%;
+    width:30%;
+    padding:2%;
+    border:solid black 2px;
+    border-radius:10px;
+    text-align: center;
+}
+
+.i1{
+    width:80%;
+    
+    
+}
+.login_button{
+    width:30%;
+    cursor:pointer;
+   
+}

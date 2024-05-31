@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Book Details</title>
+
+    <!--css connection-->
+    <link rel="stylesheet" href="USD.css">
+    <style>
+        .heading,
+        .box {
+            width: 80%;
+            left: 10%;
+            position: absolute;
+          
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            font-size: large;
+            background-image: url("/images/UserBookDetails.jpeg");
+            background-size: cover;
+        }
+
+        .heading {
+            left: 10%;
+            top: 6%;
+            display: flex;
+            flex-direction: row;
+            gap:2%;
+           
+        }
+
+        .box {
+            top: 15%;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            border: black solid 1px;
+        }
+
+        .data {
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+            left: 10%;
+           
+            
+        }
+
+        li{
+            text-decoration: none;
+            padding:2px;
+            min-width:11.5%;
+            min-height: 25px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <ul class="heading">
+        <li>Book_id</li>
+        <li>Book_Name</li>
+        <li>Author</li>
+        <li>Book_Price</li>
+        <li>Issue_Date</li>
+        <li>Return_Date</li>
+        <li>Payment Status</li>
+    </ul>
+
+    <div class="box">
+
+        <% array.forEach(function(u1){ %>
+            <ul class="data">
+                <li>
+                    <%= (u1.bookid) %>
+                </li>
+                <li>
+                    <%= (u1.Book_name) %>
+                </li>
+                <li>
+                    <%= (u1.Author) %>
+                </li>
+                <li>
+                    <%= (u1.Book_price) %>
+                </li>
+                <li>
+                    <%= (u1.issue_date) %>
+                </li>
+                <li>
+                    <%= (u1.return_date) %>
+                </li>
+                <li>
+                    <%= (u1.payment_status) %>
+                </li>
+            </ul>
+
+            <% }); %>
+
+
+    </div>
+</body>
+
+</html>
